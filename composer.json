@@ -1,0 +1,27 @@
+{
+    "name": "autopublisherx/enterprise",
+    "description": "Multi-tenant AI-powered content automation SaaS platform",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "install-full": [
+            "php scripts/install.php"
+        ],
+        "test": "phpunit"
+    }
+}
